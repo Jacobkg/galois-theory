@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   post 'events/create'
   get 'events/index'
+  get 'events/summary'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
