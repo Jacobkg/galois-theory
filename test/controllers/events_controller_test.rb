@@ -2,7 +2,7 @@ require 'test_helper'
 
 class EventsControllerTest < ActionController::TestCase
   def setup
-    ChatEvent.clear_all
+    ChatLog.clear_all
   end
 
   test "User enters a room" do
