@@ -2,7 +2,7 @@ class ChatLog
 
   DATABASE_FILE_NAME = '.chat_database'
 
-  def self.record(params)
+  def self.record!(params)
     File.open(DATABASE_FILE_NAME, 'a') do |f|
       f.puts params.to_json
     end
