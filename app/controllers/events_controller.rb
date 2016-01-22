@@ -5,7 +5,8 @@ class EventsController < ApplicationController
   end
 
   def create
-    ChatLog.record!(params)
+    event = ChatEvent.new(params)
+    ChatLog.record!(event)
     render json: { success: 'ok' }
   end
 
